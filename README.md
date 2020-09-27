@@ -73,6 +73,6 @@ List of some awesome online content to learn theory, base concepts, algorithms, 
 
 ## Contribution guidelines :
 
-- While contributing new pattern list, if possible please stick to the mentioned [structure](#Structure). Include it in [Table of contents](#-Table-of-contents).
+- While contributing new pattern list, if possible please stick to the mentioned [structure](#structure-). Include it in [Table of contents](#table-of-contents-).
 - Fell free to raise a patch for updates in any existing pattern explanations as well.
 - You can add/update practice links or Similarity Practice Pool with problem links from any practice platform (hackerrank, codeforces, leetcode, etc) where we can submit a solution and there'a a online judge to review the solution.
