@@ -27,7 +27,7 @@ For eg with `arr = [1,2]` and `weights = [1,3]`, then `P(1)` should be `1/4` (i.
 
 How can we convert this problem to equal probablity problem that we solved before ?
 
-If we forget about `weights` for a moment then `P(x)` is `1/2` and `P(2)` is `1/2`. 
+If we forget about `weights` for a moment then `P(1)` is `1/2` and `P(2)` is `1/2`. 
 How can we extend `arr` to satisfy requried probablities ?
 
 What if we extend `arr` such that our new `arr=[1,2,2,2]`. Now if we see, `P(x)` is `1/4` and `P(2)` is `3/4`. This is exactly what we wanted !
@@ -59,7 +59,7 @@ To solve this problem we should be asking below questions :
     - More formally, we can quantify this largeness of rectangle by number of points lying inside this rectangle, including boundaries. So for a rectangle `(x1, y1, x2, y2)`, number of integer points `np = (x2-x1+1)*(y2-y1+1)`
     - Now probability of picking a rectangle `i` is propotional to the number of points `np` lying inside this rectangle (including boundaries).
     - This problem is now reduced to what we solved in above example with random element being a random rectangle and weight being the number of points `np` of that rectangle !
-- How do we pick an uniformly random point inside a rectangle ?
+- How do we pick an uniformly random integer point inside a rectangle ?
     - This is just randomly and uniformly choosing `x` & `y` coordinate from given rectangle points.
 
 ```python
@@ -69,7 +69,7 @@ def randomPickWithWeightIn2D(rectangles):
     np = [0]*n
     # representing i-th rectangle by index i
     rectangle_names = [0]*n
-    for i in len(n):
+    for i in range(n):
         # calculating number of points
         x1, y1, x2, y2 = rectangles[i]
         np[i] = (x2-x1+1)*(y2-y1+1)

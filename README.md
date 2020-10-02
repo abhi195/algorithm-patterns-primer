@@ -27,14 +27,14 @@ So this repository contains a curated list of patterns that either I observed my
 
 For every topic or pattern list, I will try to follow below structure :
 
-- Mention the base problem.
+- Base problem.
+    - First problem will be the base problem.
     - I'll either try to explain the base problem or link to the best possbile explanation of the base problem.
 - Then one by one we will try to go through related problems and see how can they be solved as variation of a base or an intermediate problem.
     - Treat solution as sudo code, it might not be fully working piece of code.
 - Trade-offs : There will be some cases where there are trade-offs between space and time complexities. I'll also try to link or explain trade-offs which might or might not conform to current pattern.
 - Optimal Outlier : There will be some cases where a solution conforming to the current pattern is a valid solution, but there exists an another solution which is outlier to the current pattern and is optimal. Either you will need to use another pattern or some other concept. Whenever it's the case, I'll try to mention this as well.
-- I'll try to link each problem with a practice link where you can actually submit a solution and get your hands dirty.
-- Similarity Practice Pool : I'll try to maintain a growing list of problems that are similar to the pattern, where you can test your learnings.
+- Practice Pool : Practice link for discussed problems as well as I'll try to maintain a growing list of problems that are similar to the pattern, where you can test your learnings.
 
 ## Table of contents :
 
