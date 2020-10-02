@@ -30,7 +30,7 @@ How can we convert this problem to equal probablity problem that we solved befor
 If we forget about `weights` for a moment then `P(1)` is `1/2` and `P(2)` is `1/2`. 
 How can we extend `arr` to satisfy requried probablities ?
 
-What if we extend `arr` such that our new `arr=[1,2,2,2]`. Now if we see, `P(x)` is `1/4` and `P(2)` is `3/4`. This is exactly what we wanted !
+What if we extend `arr` such that our new `arr=[1,2,2,2]`. Now if we see, `P(1)` is `1/4` and `P(2)` is `3/4`. This is exactly what we wanted !
 
 _You see the pattern ?_
 
