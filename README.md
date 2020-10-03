@@ -40,6 +40,7 @@ For every topic or pattern list, I will try to follow below structure :
 
 - [Randomize Algorithms](src/docs/randomize-algorithms/README.md) : 
     - [Random Picks : init](src/docs/randomize-algorithms/random-picks-init.md)
+    - [Random Picks : advance](src/docs/randomize-algorithms/random-picks-advance.md)
 
 ## Upcoming :
 
@@ -48,8 +49,7 @@ For every topic or pattern list, I will try to follow below structure :
     - Boyer Moore Voting
     - Sliding Window/Two Pointers
 - Binary Search
-- Randomize Algorithms : 
-    - Random Picks : advance
+- Randomize Algorithms :
     - Reservoir Sampling
 - Trees
 - Graphs :

@@ -46,20 +46,20 @@ def randomPickWithWeight(arr, weights):
 
 **Practice link** : [[leetcode] Random Pick with Weight](https://leetcode.com/problems/random-pick-with-weight/)
 
-**Optimal Outlier** : This problem can be solved in more optimal way which we will discuss in [random picks : advance](random-pick-advance.md) section.
+**Optimal Outlier** : This problem can be solved in more optimal way which we will discuss in [random picks : advance](random-picks-advance.md) section.
 
 ## 3. Random pick with weights in 2D :
 
 **Problem Statement** : Given a list of non-overlapping `rectangles` which are aligned to axis of the cartesian plane, randomly and uniformily pick an integer point in the space covered by these rectangles. Here `rectangles` is list of `(x1, y1, x2, y2)` tuples such that `(x1, y1)` is the integer coordinate of the bottom-left corner and `(x2, y2)` is the integer coordinate of the top-right corner.
 
 To solve this problem we should be asking below questions : 
-- How do we pick a rectangle ?
+- _How do we pick a rectangle?_
     -  Out of given `n` rectangles, we cannot pick a rectangle uniformly randomly, because larger the rectangle, higher is the probability of picking an random integer point which is lying inside this rectangle.
     - So how do we quantify this largeness of a rectangle ? Area ? Yes, you are close !
     - More formally, we can quantify this largeness of rectangle by number of points lying inside this rectangle, including boundaries. So for a rectangle `(x1, y1, x2, y2)`, number of integer points `np = (x2-x1+1)*(y2-y1+1)`
     - Now probability of picking a rectangle `i` is propotional to the number of points `np` lying inside this rectangle (including boundaries).
     - This problem is now reduced to what we solved in above example with random element being a random rectangle and weight being the number of points `np` of that rectangle !
-- How do we pick an uniformly random integer point inside a rectangle ?
+- _How do we pick an uniformly random integer point inside a rectangle?_
     - This is just randomly and uniformly choosing `x` & `y` coordinate from given rectangle points.
 
 ```python
@@ -83,13 +83,13 @@ def randomPickWithWeightIn2D(rectangles):
 
 **Practice link** : [[leetcode] Random Point in Non-overlapping Rectangles](https://leetcode.com/problems/random-point-in-non-overlapping-rectangles/)
 
-**Optimal Outlier** : This problem can be solved in more optimal way which we will discuss in [random picks : advance](random-pick-advance.md) section.
+**Optimal Outlier** : This problem can be solved in more optimal way which we will discuss in [random picks : advance](random-picks-advance.md) section.
 
 
 
 ## Practice pool :
 
-| #  | Problem link  |
+| #  | Practice link  |
 |----|:--------------|
 | 1  |  https://leetcode.com/problems/random-pick-with-weight |
 | 2  |  https://leetcode.com/problems/random-point-in-non-overlapping-rectangles  |
