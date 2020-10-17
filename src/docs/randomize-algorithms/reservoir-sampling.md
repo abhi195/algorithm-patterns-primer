@@ -7,9 +7,9 @@
 
 **Problem Statement** : Given a very big array(or stream) of positive integers `stream`. Randomly pick an element from `stream`. Probability of picking any integer should be equal.
 
-This is an extension of random pick problem that we have discussed in [random picks : init](random-picks-init.md). Please refer to that first for better understanding. Generally we cannot use the solution we used in [random picks : init](random-picks-init.md), either because array is too big to fit into main memory or integers are available to us in streaming fashion so we don't know the size of the array.
+This is an extension of the random pick problem that we have discussed in [random picks : init](random-picks-init.md). Please refer to that first for better understanding. Generally we cannot use the solution we used in [random picks : init](random-picks-init.md), either because the array is too big to fit into main memory or integers are available to us in streaming fashion so we don't know the size of the array.
 
-These kind of problems could be solved using reservoir sampling technique. Idea is similar to [Fisher–Yates shuffle](https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle) algorithm. 
+These kinds of problems could be solved using reservoir sampling techniques. Idea is similar to [Fisher–Yates shuffle](https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle) algorithm. 
 
 Algorithm : 
 - Initialize random pick `random_pick = None`
@@ -30,13 +30,13 @@ def randomPick(stream):
     return random_pick
 ```
 
-For various other advance implementations please refer to [wikipedia page](https://en.wikipedia.org/wiki/Reservoir_sampling).
+For various other advanced implementations please refer to [wikipedia page](https://en.wikipedia.org/wiki/Reservoir_sampling).
 
 ## 2. Random pick index:
 
 **Problem Statement** : Given an array(or stream) of integers `stream` with possible duplicates, randomly output the index(or position in stream) `i` of a given target integer `t`.
 
-This could be solved in same was as we solved above problem, using reservoir sampling. In above example whole array(or stream) was our universe and we need to pick randomly from whole array(or stream), but here we only need to pick randomly from indices where our target `t` is occuring and we can ignore all other elements.
+This could be solved in the same way as we solved the above problem, using reservoir sampling. In the above example the whole array(or stream) was our universe and we need to pick randomly from the whole array(or stream), but here we only need to pick randomly from indices where our target `t` is occurring and we can ignore all other elements.
 
 ```python
 def randomPickIndex(stream, t):
@@ -66,7 +66,7 @@ Consider `stream = [11, 30, 2, 30, 30, 30, 6, 2, 62, 62]`, then one of the many 
 - Having iterated up to the index 5 (where the last `30` is), randomly give an index among `[1, 3, 4, 5]` which are indices of `30` - the max value by far. Each index should have a `1/4` chance to get picked.
 - Having iterated through the entire array, randomly give an index among ``[8, 9]`` which are indices of `62` - the max value by far. Each index should have a `1/2` chance to get picked.
 
-This could again be solved in same way we solved above random pick index. There we had fixed target `t`. Here our target changes as we see bigger then current max element. We make that element as our max element(or target) and continue same algorithm.
+This could again be solved in the same way we solved above random pick index. There we had a fixed target `t`. Here our target changes as we see bigger then current max element. We make that element as our max element(or target) and continue using the same algorithm.
 
 ```python
 def randomPickMaxIndex(stream):
@@ -94,13 +94,13 @@ def randomPickMaxIndex(stream):
 
 ## 4. Random pick sample:
 
-In the 1st example of this series we saw how to pick a random integer from a stream of integers using reservoir sampling. Same algorithm could be extended to pick `k` random samples from given stream of integers.
+In the 1st example of this series we saw how to pick a random integer from a stream of integers using reservoir sampling. Same algorithm could be extended to pick `k` random samples from a given stream of integers.
 
-**Problem Statement** : Given a very big array(or stream) of positive integers `stream`. Randomly pick a sample of size `k` from given stream `stream`.
+**Problem Statement** : Given a very big array(or stream) of positive integers `stream`. Randomly pick a sample of size `k` from a given stream `stream`.
 
 Algorithm : 
-- Initialize random sample called `reservoir` of size `k` with first `k` elements of the stream.
-- Element by element traverse rest of the `stream` and generate random integer `r` from `[0,i]` where `i` is index of current element of stream. 
+- Initialize a random sample called `reservoir` of size `k` with first `k` elements of the stream.
+- Element by element traverse rest of the `stream` and generate random integer `r` from `[0,i]` where `i` is the index of current element of stream. 
 - If `r<k` then replace `reservoir[r]` with `stream[i]`.
 
 For proof refer to [this](https://www.cs.rice.edu/~as143/COMP441_Spring17/scribe/lect2.pdf) article.
@@ -121,7 +121,7 @@ def randomPickSample(stream, k):
     return reservoir
 ```
 
-For various other advance implementations please refer to [wikipedia page](https://en.wikipedia.org/wiki/Reservoir_sampling).
+For various other advanced implementations please refer to [wikipedia page](https://en.wikipedia.org/wiki/Reservoir_sampling).
 
 ## Practice pool :
 
