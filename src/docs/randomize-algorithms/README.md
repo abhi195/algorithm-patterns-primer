@@ -6,7 +6,9 @@
 
 ## Table of contents :
 
-- [Random picks init](random-picks-init.md)
+- [Random Picks : init](random-picks-init.md)
+- [Random Picks : advance](random-picks-advance.md)
+- [Reservoir Sampling](reservoir-sampling.md)
 
 ## References :
 

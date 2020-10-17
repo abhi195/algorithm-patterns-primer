@@ -65,7 +65,7 @@ def nextGreater(x, arr):
 Here also once we convert rectange representation to weights array representation as we discussed in [Random picks : init](random-picks-init.md), we can leverage above approach to efficiently generate uniformly random integer point.
 
 ```python
-def randomPickWithWeightIn2D(rectangles):
+def randomPickWithWeightIn2DV2(rectangles):
     n = len(rectangles)
     # np[i] represents number of points for rectangles[i]
     np = [0]*n
