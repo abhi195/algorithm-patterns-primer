@@ -49,6 +49,7 @@ For every topic or pattern list, I will try to follow below structure :
     - Range Addition Queries
     - Boyer Moore Voting
     - Sliding Window/Two Pointers
+    - Max Area Histogram
 - Binary Search
 - Trees
 - Graphs :

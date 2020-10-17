@@ -123,6 +123,7 @@ def randomPickSample(stream, k):
 
 For various other advanced implementations please refer to [wikipedia page](https://en.wikipedia.org/wiki/Reservoir_sampling).
 
+
 ## Practice pool :
 
 | #  | Practice link  |
@@ -130,3 +131,12 @@ For various other advanced implementations please refer to [wikipedia page](http
 | 1  |  https://leetcode.com/problems/random-pick-index/ |
 | 2  |  https://leetcode.com/problems/linked-list-random-node/  |
 | 3  |  https://leetcode.com/discuss/interview-question/451431/facebook-onsite-generate-random-max-index |
+
+
+## References :
+
+- [Wikipedia : Reservoir sampling](https://en.wikipedia.org/wiki/Reservoir_sampling)
+- [Gregable : Reservoir Sampling](https://gregable.com/2007/10/reservoir-sampling.html)
+- [florian.github.io : Reservoir Sampling](https://florian.github.io/reservoir-sampling/)
+- [Geeks for geeks : Reservoir sampling](https://en.wikipedia.org/wiki/Reservoir_sampling)
+- [Tail Inequalities and Reservoir Sampling](https://www.cs.rice.edu/~as143/COMP441_Spring17/scribe/lect2.pdf)
