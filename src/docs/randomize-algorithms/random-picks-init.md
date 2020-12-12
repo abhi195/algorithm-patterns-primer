@@ -2,7 +2,7 @@
 
 ## 1. Random pick :
 
-**Problem Statement** : Given an array of positive integers `arr` of size `n`, randomly pick an element from `arr` such that probablity of picking any element is `1/n`.
+**Problem Statement** : Given an array of positive integers `arr` of size `n`, randomly pick an element from `arr` such that probability of picking any element is `1/n`.
 
 This is pretty straight forward ! Just randomly pick an index `i` from `0...n` and return `arr[i]`.
 
@@ -21,14 +21,14 @@ These trade-offs fall under category of random sampling and we will explore this
 
 ## 2. Random pick with weights :
 
-**Problem Statement** : Given two arrays of positive integers, `arr` and `weights`, each of size `n`, randomly pick an element from `arr` such that probablity of picking any element with index `i` is propotional to its weight (i.e. `weight[i]/sum(weights)`).
+**Problem Statement** : Given two arrays of positive integers, `arr` and `weights`, each of size `n`, randomly pick an element from `arr` such that probability of picking any element with index `i` is proportional to its weight (i.e. `weight[i]/sum(weights)`).
 
-For eg with `arr = [1,2]` and `weights = [1,3]`, then `P(1)` should be `1/4` (i.e 25%) and `P(2)` should be `3/4` (i.e 75%) where `P(x)` is probablity of picking element `x`.
+For eg with `arr = [1,2]` and `weights = [1,3]`, then `P(1)` should be `1/4` (i.e 25%) and `P(2)` should be `3/4` (i.e 75%) where `P(x)` is probability of picking element `x`.
 
-How can we convert this problem to equal probablity problem that we solved before ?
+How can we convert this problem to equal probability problem that we solved before ?
 
 If we forget about `weights` for a moment then `P(1)` is `1/2` and `P(2)` is `1/2`. 
-How can we extend `arr` to satisfy requried probablities ?
+How can we extend `arr` to satisfy required probabilities ?
 
 What if we extend `arr` such that our new `arr=[1,2,2,2]`. Now if we see, `P(1)` is `1/4` and `P(2)` is `3/4`. This is exactly what we wanted !
 
@@ -50,14 +50,14 @@ def randomPickWithWeight(arr, weights):
 
 ## 3. Random pick with weights in 2D :
 
-**Problem Statement** : Given a list of non-overlapping `rectangles` which are aligned to axis of the cartesian plane, randomly and uniformily pick an integer point in the space covered by these rectangles. Here `rectangles` is list of `(x1, y1, x2, y2)` tuples such that `(x1, y1)` is the integer coordinate of the bottom-left corner and `(x2, y2)` is the integer coordinate of the top-right corner.
+**Problem Statement** : Given a list of non-overlapping `rectangles` which are aligned to axis of the cartesian plane, randomly and uniformly pick an integer point in the space covered by these rectangles. Here `rectangles` is list of `(x1, y1, x2, y2)` tuples such that `(x1, y1)` is the integer coordinate of the bottom-left corner and `(x2, y2)` is the integer coordinate of the top-right corner.
 
 To solve this problem we should be asking below questions : 
 - _How do we pick a rectangle?_
     -  Out of given `n` rectangles, we cannot pick a rectangle uniformly randomly, because larger the rectangle, higher is the probability of picking an random integer point which is lying inside this rectangle.
     - So how do we quantify this largeness of a rectangle ? Area ? Yes, you are close !
     - More formally, we can quantify this largeness of rectangle by number of points lying inside this rectangle, including boundaries. So for a rectangle `(x1, y1, x2, y2)`, number of integer points `np = (x2-x1+1)*(y2-y1+1)`
-    - Now probability of picking a rectangle `i` is propotional to the number of points `np` lying inside this rectangle (including boundaries).
+    - Now probability of picking a rectangle `i` is proportional to the number of points `np` lying inside this rectangle (including boundaries).
     - This problem is now reduced to what we solved in above example with random element being a random rectangle and weight being the number of points `np` of that rectangle !
 - _How do we pick an uniformly random integer point inside a rectangle?_
     - This is just randomly and uniformly choosing `x` & `y` coordinate from given rectangle points.

@@ -3,7 +3,7 @@
 
 > "Fret not, for there is **rhyme & reason** to this madness!" -- [Patterns in Algorithm Design](https://levelup.gitconnected.com/patterns-in-algorithm-design-17b327167c5e)
 
-An organised list of algorithmic problems categorised by similarities or patterns in their solutions.
+An organized list of algorithmic problems categorized by similarities or patterns in their solutions.
 
 ## Why ?
 
@@ -21,7 +21,7 @@ At this point you should have an epiphany and you should give a second thought o
 
 In my experience while learning some hard topics such as Dynamic Programming it could be really frustrating to tackle them individually without understanding patterns. Versus if you picked a base problem and tried to tackle related problem as variations of the previously solved problems, it could really help you to grasp the concept. And in future you would be easily able to figure out if any new problem is variation of what you have already solved.
 
-So this repository contains a curated list of patterns that either I observed myself or learned through some awesome article or youtube channels. I will try to link all original sources with each topics or lists.
+So this repository contains a curated list of patterns that either I observed myself or learned through some awesome article or YouTube channels. I will try to link all original sources with each topics or lists.
 
 ## Structure :
 
@@ -29,7 +29,7 @@ For every topic or pattern list, I will try to follow below structure :
 
 - Base problem.
     - First problem will be the base problem.
-    - I'll either try to explain the base problem or link to the best possbile explanation of the base problem.
+    - I'll either try to explain the base problem or link to the best possible explanation of the base problem.
 - Then one by one we will try to go through related problems and see how can they be solved as variation of a base or an intermediate problem.
     - Treat solution as sudo code, it might not be fully working piece of code.
 - Trade-offs : There will be some cases where there are trade-offs between space and time complexities. I'll also try to link or explain trade-offs which might or might not conform to current pattern.
@@ -79,4 +79,4 @@ List of some awesome online content to learn theory, base concepts, algorithms, 
 
 - While contributing new pattern list, if possible please stick to the mentioned [structure](#structure-). Include it in [Table of contents](#table-of-contents-).
 - Fell free to raise a patch for updates in any existing pattern explanations as well.
-- You can add/update practice links or Similarity Practice Pool with problem links from any practice platform (hackerrank, codeforces, leetcode, etc) where we can submit a solution and there'a a online judge to review the solution.
+- You can add/update practice links or Similarity Practice Pool with problem links from any practice platform (hackerrank, codeforces, leetcode, etc) where we can submit a solution and there's a online judge to review the solution.
